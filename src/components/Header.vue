@@ -25,8 +25,15 @@ export default {
 @use '../assets/scss/partial/variables' as *;
 @use '../assets/scss/partial/mixins.scss' as *;
 
-.container {
+header {
+  background-color: $header-primary;
+  color: $header-font;
+  .container {
   @include container;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
 }
 
 </style>

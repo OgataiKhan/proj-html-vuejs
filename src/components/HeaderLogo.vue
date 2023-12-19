@@ -8,12 +8,13 @@ export default {
 </script>
 
 <template>
-  HeaderLogo
-  <font-awesome-icon icon="fa-solid fa-cart-shopping" />
-  <font-awesome-icon icon="fa-regular fa-circle-user" />
-  <font-awesome-icon icon="fa-brands fa-square-facebook" />
+  <div class="logo">
+    <img src="/public/img/light-logo.png" alt="MaxCoach Logo">
+  </div>
 </template>
 
 <style lang="scss" scoped>
-
+.logo {
+  width: 160px;
+}
 </style>

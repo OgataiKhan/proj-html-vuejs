@@ -1,5 +1,6 @@
 import { createApp } from 'vue';
-
+//font Red Hat Display
+import "@fontsource/red-hat-display";
 //fontawesome core
 import { library } from '@fortawesome/fontawesome-svg-core';
 //fontawesome icon component

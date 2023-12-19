@@ -1,6 +1,3 @@
-# VueJS Vite starting template
+# MaxCoach
 
-```
-npm install
-npm run dev
-```
+Work in progress

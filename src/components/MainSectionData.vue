@@ -1,15 +1,18 @@
 <script>
 import MainSectionDataNumber from './MainSectionDataNumber.vue';
 import MainSectionDataSubject from './MainSectionDataSubject.vue';
+import Button from './Button.vue';
 
 export default {
   name: 'MainSectionData',
   components: {
     MainSectionDataNumber,
     MainSectionDataSubject,
+    Button,
   },
   data() {
     return {
+      buttonText: 'Get started for free',
       globalNumbers: [
         {
           number: '1.926',
@@ -79,6 +82,13 @@ export default {
         <div class="get-started">
           <p>Together we can create</p>
           <h3>Services we <span class="highlight">can provide</span> for my cients.</h3>
+          <ul class="benefit-list">
+            <li><font-awesome-icon class="check" icon="fa-solid fa-check" />Select & customize courses to your preferences</li>
+            <li><font-awesome-icon class="check" icon="fa-solid fa-check" />Change the tutor and make arrangements</li>
+            <li><font-awesome-icon class="check" icon="fa-solid fa-check" />Participate in events to join others</li>
+            <li><font-awesome-icon class="check" icon="fa-solid fa-check" />Get the desired certificate delivered at house</li>
+          </ul>
+          <Button :class="'btntwo'" :text="buttonText" />
         </div>
       </div>
     </div>
@@ -147,6 +157,17 @@ export default {
           .highlight {
             color: $details-primary;
             font-weight: 400;
+          }
+        }
+        .benefit-list {
+          padding-top: 41px;
+          padding-bottom: 20px;
+          li {
+            margin-bottom: 15px;
+            .check {
+              color: $details-primary;
+              padding-right: 20px;
+            }
           }
         }
       }

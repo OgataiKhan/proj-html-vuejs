@@ -9,7 +9,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 //fontawesome icon component
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 //fontawesome import specific icons
-import { faChevronDown, faCartShopping, faCircleUser, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faCartShopping, faCircleUser, faMagnifyingGlass, faCheck } from '@fortawesome/free-solid-svg-icons';
 // import { faCircleUser } from '@fortawesome/free-regular-svg-icons';
 import { faSquareFacebook } from '@fortawesome/free-brands-svg-icons';
 
@@ -19,6 +19,6 @@ import './assets/scss/style.scss';
 import App from './App.vue';
 
 //fontawesome add icons to library
-library.add(faChevronDown, faCartShopping, faMagnifyingGlass, faCircleUser, faSquareFacebook);
+library.add(faChevronDown, faCartShopping, faMagnifyingGlass, faCircleUser, faCheck, faSquareFacebook);
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app');

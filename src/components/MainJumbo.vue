@@ -8,6 +8,11 @@ export default {
     Button,
     MainJumboPlayer,
   },
+  data() {
+    return {
+      buttonText: 'Get started for free',
+    };
+  },
 };
 
 </script>
@@ -17,7 +22,7 @@ export default {
     <div class="container">
       <h1>Learn at your own pace!</h1>
       <p class="subtitle">Get teamed up with people of the same will.</p>
-      <Button :class="'btnone'" />
+      <Button :class="'btnone'" :text="buttonText" />
       <MainJumboPlayer />
     </div>
   </div>

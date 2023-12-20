@@ -26,7 +26,7 @@ export default {
     padding: 20px;
     margin: 78px auto 0;
     border-radius: 20px;
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
     .video {
       display: flex;
       justify-content: center;

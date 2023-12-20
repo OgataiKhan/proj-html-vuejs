@@ -8,7 +8,6 @@ export default {
   },
   data() {
     return {
-      text: 'Template VueJS',
       navbarMenu: [
         'Home',
         'Pages',

@@ -3,6 +3,7 @@ import { createApp } from 'vue';
 import "@fontsource/red-hat-display";
 import "@fontsource/red-hat-display/500.css";
 import "@fontsource/red-hat-display/700.css";
+import "@fontsource/red-hat-display/900.css";
 //fontawesome core
 import { library } from '@fortawesome/fontawesome-svg-core';
 //fontawesome icon component

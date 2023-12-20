@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-  <button class="btn">Get started for free</button>
+  <button class="btn">{{ text }}</button>
 </template>
 
 <style lang="scss" scoped>
@@ -48,5 +48,4 @@ export default {
 .btntwo:hover {
   background-color: $btn-secondary;
 }
-
 </style>

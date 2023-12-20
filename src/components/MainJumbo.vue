@@ -29,13 +29,14 @@ export default {
 
 .jumbo {
   background-color: $header-primary;
-  background: linear-gradient(to top, $bg-primary 110px, $header-primary 110px);
+  background-image: url(../assets/img/home-6-hero-left-person.png), url(../assets/img/home-6-hero-right-person.png), linear-gradient(to top, $bg-primary 110px, $header-primary 110px);
+  background-position: left calc(50% - 530px) bottom, right calc(50% - 505px) bottom -165px, 0 0;
+  background-repeat: no-repeat;
   color: $header-font;
   text-align: center;
-
+  padding-bottom: 21px;
   .container {
     @include container;
-
     h1 {
       text-transform: capitalize;
       font-size: 2.9rem;

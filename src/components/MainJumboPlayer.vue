@@ -24,9 +24,9 @@ export default {
     background-color: #FFFFFF;
     width: 770px;
     padding: 20px;
-    margin: 78px auto 21px;
+    margin: 78px auto 0;
     border-radius: 20px;
-    // border: 1px solid black;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
     .video {
       display: flex;
       justify-content: center;

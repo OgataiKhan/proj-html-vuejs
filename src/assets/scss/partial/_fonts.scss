@@ -3,7 +3,9 @@
 FONTS
 *********
 */
+@use './variables' as *;
 
 body {
   font-family: "Red Hat Display";
+  color: $font-primary;
 }

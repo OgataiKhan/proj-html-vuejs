@@ -1,10 +1,12 @@
 <script>
 import MainSectionDataNumber from './MainSectionDataNumber.vue';
+import MainSectionDataSubject from './MainSectionDataSubject.vue';
 
 export default {
   name: 'MainSectionData',
   components: {
     MainSectionDataNumber,
+    MainSectionDataSubject,
   },
   data() {
     return {
@@ -26,6 +28,28 @@ export default {
           label: 'Satisfaction rate',
         },
       ],
+      subjects: [
+        {
+          title: 'Graphic Design',
+          description: 'Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness.',
+          img: 'home-6-service-image-01.png',
+        },
+        {
+          title: 'Business Administration',
+          description: 'Learners are encouraged to study the mechanism and structure of system administration.',
+          img: 'home-6-service-image-02.png',
+        },
+        {
+          title: 'Idea Discussion',
+          description: 'Get teamed up with the specialists who work and teach coding for years at famous universities.',
+          img: 'home-6-service-image-03.png',
+        },
+        {
+          title: 'Web Development',
+          description: 'Learn to study building a webpage from scratch. You decide your own pace, course and speed.',
+          img: 'home-6-service-image-04.png',
+        },
+      ],
     };
   },
 };
@@ -41,6 +65,22 @@ export default {
       <ul class="global-numbers">
         <MainSectionDataNumber v-for="display in globalNumbers" :numberDisplay="display.number" :numberLabel="display.label" />
       </ul>
+      <div class="subjects-box">
+        <div class="subjects-cards">
+          <div class="cards-left">
+            <MainSectionDataSubject :class="'text-first'" :title="subjects[0].title" :text="subjects[0].description" :img="subjects[0].img" />
+            <MainSectionDataSubject :class="'img-first img-attached'" :title="subjects[2].title" :text="subjects[2].description" :img="subjects[2].img" />
+          </div>
+          <div class="cards-right">
+            <MainSectionDataSubject :class="'text-first'" :title="subjects[1].title" :text="subjects[1].description" :img="subjects[1].img" />
+            <MainSectionDataSubject :class="'img-first'" :title="subjects[3].title" :text="subjects[3].description" :img="subjects[3].img" />
+          </div>
+        </div>
+        <div class="get-started">
+          <p>Together we can create</p>
+          <h3>Services we <span class="highlight">can provide</span> for my cients.</h3>
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -51,7 +91,6 @@ export default {
 
 .section-data {
   text-align: center;
-  color: $font-primary;
   .container {
     @include container;
     h2 {
@@ -73,6 +112,44 @@ export default {
       display: flex;
       justify-content: space-around;
       padding: 150px 0;
+    }
+    .subjects-box {
+      display: flex;
+      justify-content: space-between;
+      .subjects-cards {
+        display: flex;
+        gap: $cards-gap;
+        .cards-left,
+        .cards-right {
+          display: flex;
+          flex-direction: column;
+          gap: $cards-gap;
+        }
+        .cards-right {
+          padding-top: 70px;
+        }
+      }
+      .get-started {
+        padding-top: 200px;
+        margin-right: 125px;
+        width: 373px;
+        text-align: left;
+        p {
+          text-transform: uppercase;
+          color: $font-secondary;
+          font-weight: 500;
+          font-size: 0.8rem;
+          padding-bottom: 20px;
+        }
+        h3 {
+          font-size: 2.3rem;
+          text-transform: capitalize;
+          .highlight {
+            color: $details-primary;
+            font-weight: 400;
+          }
+        }
+      }
     }
   }
 }

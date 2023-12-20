@@ -13,7 +13,7 @@ export default {
       <font-awesome-icon icon="fa-solid fa-cart-shopping" />
     </a>
     <a href="#" class="icon-box">
-      <font-awesome-icon icon="fa-regular fa-circle-user" />
+      <font-awesome-icon icon="fa-solid fa-circle-user" />
     </a>
   </div>
 </template>

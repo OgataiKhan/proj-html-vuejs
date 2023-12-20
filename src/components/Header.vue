@@ -32,7 +32,7 @@ header {
   @include container;
   display: flex;
   justify-content: space-between;
-  padding: 15px 0;
+  padding: 25px 0;
 }
 }
 

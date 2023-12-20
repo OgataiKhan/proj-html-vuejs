@@ -8,8 +8,8 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 //fontawesome icon component
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 //fontawesome import specific icons
-import { faChevronDown, faCartShopping, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-import { faCircleUser } from '@fortawesome/free-regular-svg-icons';
+import { faChevronDown, faCartShopping, faCircleUser, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+// import { faCircleUser } from '@fortawesome/free-regular-svg-icons';
 import { faSquareFacebook } from '@fortawesome/free-brands-svg-icons';
 
 //file di partenza stili progetto

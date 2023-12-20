@@ -9,7 +9,7 @@ export default {
 
 <template>
   <div class="logo">
-    <img src="/public/img/light-logo.png" alt="MaxCoach Logo">
+    <img src="/img/light-logo.png" alt="MaxCoach Logo">
   </div>
 </template>
 

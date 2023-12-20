@@ -101,6 +101,11 @@ export default {
 
 .section-data {
   text-align: center;
+  background-image: url(../../src/assets/img/background-pattern-grid-line.png);
+  background-position: center;
+  background-size: 420px;
+  margin-top: -111px;
+  padding-top: 111px;
   .container {
     @include container;
     h2 {

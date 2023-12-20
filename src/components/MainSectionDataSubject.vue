@@ -14,7 +14,6 @@ export default {
 <template>
   <div class="card">
     <div class="text">
-      <!-- <h6>Graphic Design</h6> -->
       <h6>{{ title }}</h6>
       <p>{{ text }}</p>
     </div>
@@ -35,6 +34,7 @@ export default {
   text-align: left;
   display: flex;
   justify-content: space-between;
+  background-color: $bg-primary;
 
   .text {
     padding-left: 25px;

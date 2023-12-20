@@ -27,6 +27,8 @@ export default {
     margin: 78px auto 0;
     border-radius: 20px;
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 5;
     .video {
       display: flex;
       justify-content: center;

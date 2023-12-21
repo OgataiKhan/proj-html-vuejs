@@ -54,7 +54,6 @@ export default {
 
   .address-text {
     font-size: 0.9rem;
-    color: $font-secondary;
     .address,
     .tel {
       padding-bottom: 13px;
@@ -66,6 +65,7 @@ export default {
     .social-list {
       display: flex;
       gap: 30px;
+      color: $font-secondary;
     }
   }
 }

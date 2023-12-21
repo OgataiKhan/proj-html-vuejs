@@ -40,6 +40,7 @@ footer {
     color: $font-secondary;
     font-size: 0.8rem;
     font-weight: 500;
+    padding-top: 75px;
   }
 }
 

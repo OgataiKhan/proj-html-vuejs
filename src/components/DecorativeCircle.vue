@@ -23,5 +23,10 @@ export default {
   border-width: 7px;
   border-style: solid;
   position: absolute;
+  transition: transform 0.4s;
+  transition-timing-function: ease;
+  &:hover {
+    transform: scale(1.3);
+  }
 }
 </style>

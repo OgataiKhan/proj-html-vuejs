@@ -87,7 +87,6 @@ export default {
 
 .section-courses {
   background-color: $bg-secondary;
-  text-align: center;
   padding-bottom: 90px;
 
   .container {

@@ -38,7 +38,6 @@ export default {
   background-position: left calc(50% - 530px) bottom, right calc(50% - 505px) bottom -165px, 0 0;
   background-repeat: no-repeat;
   color: $header-font;
-  text-align: center;
   padding-bottom: 21px;
   .container {
     @include container;

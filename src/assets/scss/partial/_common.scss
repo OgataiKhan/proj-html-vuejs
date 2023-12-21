@@ -22,3 +22,19 @@ COMMON
     font-weight: 400;
   }
 }
+
+.jumbo,
+section {
+  text-align: center;
+}
+
+.quote-author {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.author-title {
+  color: $font-secondary;
+  font-size: 0.8rem;
+}

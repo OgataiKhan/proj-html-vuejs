@@ -1,6 +1,6 @@
 # MaxCoach
 
-This project is a mockup of the website of a generic coaching and tutoring service.
+This project is a mockup of the website of a generic coaching and tutoring service created using Vue with Vite.
 
 ## Features
 

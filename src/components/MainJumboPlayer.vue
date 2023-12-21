@@ -8,6 +8,7 @@ export default {
 </script>
 
 <template>
+  <!-- Video frame -->
   <div class="player-box">
     <div class="video">
       <img src="../assets/img/home-6-hero-poster-final.jpg" alt="Jumbo Video">

@@ -102,14 +102,17 @@ export default {
 <template>
   <section class="section-data" id="pages">
     <div class="container">
+      <!-- CEO quote -->
       <h2 class="quote">Let passion and determination be the guide along the way and develop at your own pace that's
         comfortable.</h2>
       <p class="quote-author">Fannie Moreno</p>
       <p class="author-title">/Founder & CEO</p>
+      <!-- Global numbers describing the business -->
       <ul class="global-numbers">
         <MainSectionDataNumber v-for="display in globalNumbers" :numberDisplay="display.number"
           :numberLabel="display.label" />
       </ul>
+      <!-- Subjects & Services -->
       <div class="subjects-box">
         <div class="subjects-cards">
           <div class="cards-left">

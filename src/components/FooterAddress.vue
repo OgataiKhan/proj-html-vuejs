@@ -34,6 +34,7 @@ export default {
 
 <template>
   <div class="address-box">
+    <!-- Address & other contact information -->
     <h5 class="footer-title">Address</h5>
     <div class="address-text">
       <p class="address">382 NE 191st St # 87394 Miami, FL 33179-3899</p>

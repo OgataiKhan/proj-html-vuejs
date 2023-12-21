@@ -9,12 +9,14 @@ export default {
 
 <template>
   <div class="navbar-icons">
+    <!-- Shopping Cart -->
     <a href="#" class="icon-box cart-box">
       <font-awesome-icon icon="fa-solid fa-cart-shopping" />
       <div class="cart-items">
         0
       </div>
     </a>
+    <!-- User Profile -->
     <a href="#" class="icon-box">
       <font-awesome-icon icon="fa-solid fa-circle-user" />
     </a>
@@ -34,6 +36,7 @@ export default {
     display: flex;
     align-items: center;
     position: relative;
+
     .cart-items {
       position: absolute;
       left: calc(50% + 2px);

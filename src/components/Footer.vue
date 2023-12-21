@@ -19,7 +19,9 @@ export default {
       <FooterAddress />
       <FooterLinks />
     </div>
+    <!-- Copyright -->
     <p class="copyright">&copy; 2020 Maxcoach. All Rights Reserved</p>
+    <!-- Home button -->
     <button class="go-up">
       <a href="#home">
         &uarr;

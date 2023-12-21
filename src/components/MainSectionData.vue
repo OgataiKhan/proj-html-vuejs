@@ -80,8 +80,8 @@ export default {
           </div>
         </div>
         <div class="get-started">
-          <p>Together we can create</p>
-          <h3>Services we <span class="highlight">can provide</span> for my cients.</h3>
+          <p class="section-subtitle">Together we can create</p>
+          <h3 class="section-title">Services we <span class="highlight">can provide</span> for my cients.</h3>
           <ul class="benefit-list">
             <li><font-awesome-icon class="check" icon="fa-solid fa-check" />Select & customize courses to your preferences</li>
             <li><font-awesome-icon class="check" icon="fa-solid fa-check" />Change the tutor and make arrangements</li>
@@ -106,6 +106,7 @@ export default {
   background-size: 420px;
   margin-top: -111px;
   padding-top: 111px;
+  padding-bottom: 100px;
   .container {
     @include container;
     h2 {
@@ -150,19 +151,7 @@ export default {
         width: 373px;
         text-align: left;
         p {
-          text-transform: uppercase;
-          color: $font-secondary;
-          font-weight: 500;
-          font-size: 0.8rem;
           padding-bottom: 20px;
-        }
-        h3 {
-          font-size: 2.3rem;
-          text-transform: capitalize;
-          .highlight {
-            color: $details-primary;
-            font-weight: 400;
-          }
         }
         .benefit-list {
           padding-top: 41px;

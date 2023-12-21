@@ -4,4 +4,21 @@ COMMON
 *********
 */
 
-// @use './variables' as *;
+@use './variables' as *;
+
+.section-subtitle {
+  text-transform: uppercase;
+  color: $font-secondary;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.section-title {
+  font-size: 2.3rem;
+  text-transform: capitalize;
+
+  .highlight {
+    color: $details-primary;
+    font-weight: 400;
+  }
+}

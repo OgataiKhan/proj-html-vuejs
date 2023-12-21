@@ -2,23 +2,28 @@
 
 export default {
   name: 'MainSectionTestimonialsQuote',
-
+  props: {
+    author: String,
+    text: String,
+    title: String,
+    img: String,
+    conditionalClass: Object,
+  },
 };
 
 </script>
 
 <template>
-  <div class="quote-box">
+  <div class="quote-box" :class="conditionalClass">
     <div class="quote-image-box">
       <div class="quote-image">
-        <img src="../../src/assets/img/testimonial-quotes/testimonial-avata-02.jpg" alt="Mina Hollace">
+        <img :src="`../../src/assets/img/testimonial-quotes/${img}`" :alt="author">
       </div>
     </div>
     <div class="quote-text">
-      <h2 class="quote">I am free to learn at my own pace, follow my own schedule and choose the subject I like. Great
-        study portal for people like me.</h2>
-      <p class="quote-author">Mina Hollace</p>
-      <p class="author-title">/Freelancer</p>
+      <h2 class="quote">{{ text }}</h2>
+      <p class="quote-author">{{ author }}</p>
+      <p class="author-title">/{{ title }}</p>
     </div>
   </div>
 </template>
@@ -27,8 +32,17 @@ export default {
 @use '../assets/scss/partial/variables' as *;
 
 .quote-box {
-  display: flex;
   padding: 0 100px 0;
+  display: flex;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 0.4s;
+  &.visible {
+    opacity: 1;
+  }
 
   .quote-image-box {
     width: 400px;

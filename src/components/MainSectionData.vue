@@ -3,6 +3,7 @@ import { store } from '../store';
 import MainSectionDataNumber from './MainSectionDataNumber.vue';
 import MainSectionDataSubject from './MainSectionDataSubject.vue';
 import Button from './Button.vue';
+import DecorativeCircle from './DecorativeCircle.vue';
 
 export default {
   name: 'MainSectionData',
@@ -10,6 +11,7 @@ export default {
     MainSectionDataNumber,
     MainSectionDataSubject,
     Button,
+    DecorativeCircle,
   },
   data() {
     return {
@@ -31,6 +33,64 @@ export default {
         {
           number: '100%',
           label: 'Satisfaction rate',
+        },
+      ],
+      circles: [
+        {
+          size: '52px',
+          borderColor: '#8FD6CA',
+          innerColor: 'transparent',
+          top: '180px',
+          left: 'calc(50% - 650px)',
+        },
+        {
+          size: '46px',
+          borderColor: '#BCE6DF',
+          innerColor: '#BCE6DF',
+          top: '90px',
+          left: 'calc(50% + 600px)',
+        },
+        {
+          size: '28px',
+          borderColor: '#BC71FE',
+          innerColor: '#BC71FE',
+          top: '240px',
+          left: 'calc(50% - 150px)',
+        },
+        {
+          size: '35px',
+          borderColor: '#FF8265',
+          innerColor: '#FF8265',
+          top: '400px',
+          left: 'calc(50% - 620px)',
+        },
+        {
+          size: '54px',
+          borderColor: '#EBB860',
+          innerColor: '#EBB860',
+          top: '620px',
+          left: 'calc(50% - 740px)',
+        },
+        {
+          size: '38px',
+          borderColor: '#E88C98',
+          innerColor: '#E88C98',
+          top: '340px',
+          left: 'calc(50% + 630px)',
+        },
+        {
+          size: '36px',
+          borderColor: '#AAB8F1',
+          innerColor: '#AAB8F1',
+          top: '500px',
+          left: 'calc(50% + 440px)',
+        },
+        {
+          size: '70px',
+          borderColor: '#F6B9AA',
+          innerColor: 'transparent',
+          top: '610px',
+          left: 'calc(50% + 620px)',
         },
       ],
     };
@@ -80,6 +140,8 @@ export default {
         </div>
       </div>
     </div>
+    <DecorativeCircle v-for="circle in circles" :size="circle.size" :borderColor="circle.borderColor" :innerColor="circle.innerColor"
+      :top="circle.top" :left="circle.left" />
   </section>
 </template>
 
@@ -94,6 +156,7 @@ export default {
   margin-top: -111px;
   padding-top: 111px;
   padding-bottom: 100px;
+  position: relative;
 
   .container {
     @include container;

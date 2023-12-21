@@ -16,11 +16,11 @@ COMMON
 .section-title {
   font-size: 2.3rem;
   text-transform: capitalize;
+}
 
-  .highlight {
-    color: $details-primary;
-    font-weight: 400;
-  }
+.highlight {
+  color: $details-primary;
+  font-weight: 400;
 }
 
 .jumbo,

@@ -73,6 +73,7 @@ export default {
       font-size: 1.2rem;
       line-height: 1.6;
       padding-bottom: 13px;
+      color: $header-primary;
     }
     .course-stats {
       display: flex;

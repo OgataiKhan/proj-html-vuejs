@@ -16,5 +16,7 @@ export default {
 <style lang="scss" scoped>
 .logo {
   width: 160px;
+  display: flex;
+  align-items: center;
 }
 </style>

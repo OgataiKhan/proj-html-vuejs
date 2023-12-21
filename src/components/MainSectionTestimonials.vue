@@ -49,12 +49,14 @@ export default {
     };
   },
   methods: {
+    // This method cycles the quoteIndex through all the available quotes in the quotes array
     next() {
       this.quoteIndex++;
       if (this.quoteIndex > this.quotes.length - 1) {
         this.quoteIndex = 0;
       }
     },
+    // This method calls the next() function every 6 seconds to change the visible quote
     autoplay() {
       if (this.autoplayVariable) {
         clearInterval(this.autoplayVariable);

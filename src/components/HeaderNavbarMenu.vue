@@ -9,12 +9,12 @@ export default {
   data() {
     return {
       navbarMenu: [
-        'Home',
-        'Pages',
-        'Courses',
-        'Features',
-        'Blog',
-        'Shop',
+        'home',
+        'pages',
+        'courses',
+        'features',
+        'blog',
+        'shop',
       ],
     };
   },

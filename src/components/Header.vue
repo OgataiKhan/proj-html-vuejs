@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-  <header>
+  <header id="home">
     <div class="container">
       <HeaderLogo />
       <HeaderNavbar />

@@ -69,7 +69,7 @@ export default {
 </script>
 
 <template>
-  <section class="section-courses">
+  <section class="section-courses" id="courses">
     <div class="container">
       <p class="section-subtitle">Choose a course to get started</p>
       <h3 class="section-title">Latest featured <span class="highlight">courses</span></h3>

@@ -100,7 +100,7 @@ export default {
 </script>
 
 <template>
-  <section class="section-data">
+  <section class="section-data" id="pages">
     <div class="container">
       <h2 class="quote">Let passion and determination be the guide along the way and develop at your own pace that's
         comfortable.</h2>

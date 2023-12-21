@@ -38,7 +38,7 @@ export default {
 </script>
 
 <template>
-  <section class="section-blog">
+  <section class="section-blog" id="blog">
     <div class="container">
       <p class="section-subtitle">Enjoy reading on MaxCoach</p>
       <h3 class="section-title">Latest on <span class="highlight">our blogs</span></h3>

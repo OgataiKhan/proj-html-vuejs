@@ -20,6 +20,11 @@ export default {
       <FooterLinks />
     </div>
     <p class="copyright">&copy; 2020 Maxcoach. All Rights Reserved</p>
+    <button class="go-up">
+      <a href="#home">
+        &uarr;
+      </a>
+    </button>
   </footer>
 </template>
 
@@ -31,6 +36,7 @@ footer {
   background-color: $bg-secondary;
   padding-top: 65px;
   padding-bottom: 55px;
+  position: relative;
   .container {
     @include container;
     display: flex;
@@ -41,6 +47,27 @@ footer {
     font-size: 0.8rem;
     font-weight: 500;
     padding-top: 75px;
+  }
+  .go-up {
+    background-color: $details-primary;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: $header-font;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 

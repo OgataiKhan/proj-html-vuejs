@@ -11,7 +11,7 @@ export default {
 
 <template>
   <li>
-    <a class="test" href="#">{{ item }}</a> <font-awesome-icon class="chevron" icon="fa-solid fa-chevron-down" />
+    <a class="test" :href="`#${item}`">{{ item }}</a> <font-awesome-icon class="chevron" icon="fa-solid fa-chevron-down" />
   </li>
 </template>
 
@@ -21,6 +21,7 @@ li {
   align-items: center;
   font-size: 1rem;
   font-weight: 500;
+  text-transform: capitalize;
 
   .chevron {
     padding-left: 5px;

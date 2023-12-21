@@ -16,7 +16,7 @@ export default {
 </script>
 
 <template>
-  <section class="section-start">
+  <section class="section-start" id="shop">
     <div class="container">
       <h5 class="start-subtitle">Start today for getting <span class="highlight">Online Certification</span></h5>
       <h4 class="start-title">You can be your own guiding star with our help!</h4>

@@ -25,7 +25,7 @@ export default {
 </script>
 
 <template>
-  <section class="section-testimonials">
+  <section class="section-testimonials" id="features">
     <div class="container">
       <h3 class="section-title">Why people talk about <span class="highlight">MaxCoach</span>?</h3>
       <MainSectionTestimonialsQuote />

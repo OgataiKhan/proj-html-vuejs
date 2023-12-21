@@ -1,13 +1,16 @@
 <script>
 import CourseCard from './CourseCard.vue';
+import Button from './Button.vue';
 
 export default {
   name: 'MainSectionCourses',
   components: {
     CourseCard,
+    Button,
   },
   data() {
     return {
+      buttonText: 'View all courses &rarr;',
       // Number of lessons and students is registered as a string rather than a number in case we want to register a "None" value representing "0"
       courses: [
         {
@@ -73,6 +76,7 @@ export default {
       <ul class="course-list">
         <CourseCard v-for="course in courses" :name="course.name" :img="course.img" :price="course.price" :priceDecimals="course.priceDecimals" :lessons="course.lessons" :students="course.students" />
       </ul>
+      <Button :class="'btntwo large'" :text="buttonText" />
     </div>
   </section>
 </template>
@@ -84,6 +88,7 @@ export default {
 .section-courses {
   background-color: $bg-secondary;
   text-align: center;
+  padding-bottom: 90px;
 
   .container {
     @include container;

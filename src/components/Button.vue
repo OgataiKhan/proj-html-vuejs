@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-  <button class="btn">{{ text }}</button>
+  <button class="btn" v-html="text"></button>
 </template>
 
 <style lang="scss" scoped>

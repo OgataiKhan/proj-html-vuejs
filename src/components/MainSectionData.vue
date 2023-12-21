@@ -1,4 +1,5 @@
 <script>
+import { store } from '../store';
 import MainSectionDataNumber from './MainSectionDataNumber.vue';
 import MainSectionDataSubject from './MainSectionDataSubject.vue';
 import Button from './Button.vue';
@@ -12,6 +13,7 @@ export default {
   },
   data() {
     return {
+      store,
       buttonText: 'Get started for free',
       globalNumbers: [
         {
@@ -31,28 +33,6 @@ export default {
           label: 'Satisfaction rate',
         },
       ],
-      subjects: [
-        {
-          title: 'Graphic Design',
-          description: 'Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness.',
-          img: 'home-6-service-image-01.png',
-        },
-        {
-          title: 'Business Administration',
-          description: 'Learners are encouraged to study the mechanism and structure of system administration.',
-          img: 'home-6-service-image-02.png',
-        },
-        {
-          title: 'Idea Discussion',
-          description: 'Get teamed up with the specialists who work and teach coding for years at famous universities.',
-          img: 'home-6-service-image-03.png',
-        },
-        {
-          title: 'Web Development',
-          description: 'Learn to study building a webpage from scratch. You decide your own pace, course and speed.',
-          img: 'home-6-service-image-04.png',
-        },
-      ],
     };
   },
 };
@@ -62,7 +42,8 @@ export default {
 <template>
   <section class="section-data">
     <div class="container">
-      <h2 class="quote">Let passion and determination be the guide along the way and develop at your own pace that's comfortable.</h2>
+      <h2 class="quote">Let passion and determination be the guide along the way and develop at your own pace that's
+        comfortable.</h2>
       <p class="quote-author">Fannie Moreno</p>
       <p class="author-title">/Founder & CEO</p>
       <ul class="global-numbers">
@@ -72,16 +53,16 @@ export default {
       <div class="subjects-box">
         <div class="subjects-cards">
           <div class="cards-left">
-            <MainSectionDataSubject :class="'text-first'" :title="subjects[0].title" :text="subjects[0].description"
-              :img="subjects[0].img" />
-            <MainSectionDataSubject :class="'img-first img-attached'" :title="subjects[2].title"
-              :text="subjects[2].description" :img="subjects[2].img" />
+            <MainSectionDataSubject :class="'text-first'" :title="store.subjects[3].title"
+              :text="store.subjects[3].description" :img="store.subjects[3].img" />
+            <MainSectionDataSubject :class="'img-first img-attached'" :title="store.subjects[0].title"
+              :text="store.subjects[0].description" :img="store.subjects[0].img" />
           </div>
           <div class="cards-right">
-            <MainSectionDataSubject :class="'text-first'" :title="subjects[1].title" :text="subjects[1].description"
-              :img="subjects[1].img" />
-            <MainSectionDataSubject :class="'img-first'" :title="subjects[3].title" :text="subjects[3].description"
-              :img="subjects[3].img" />
+            <MainSectionDataSubject :class="'text-first'" :title="store.subjects[2].title"
+              :text="store.subjects[2].description" :img="store.subjects[2].img" />
+            <MainSectionDataSubject :class="'img-first'" :title="store.subjects[1].title"
+              :text="store.subjects[1].description" :img="store.subjects[1].img" />
           </div>
         </div>
         <div class="get-started">
@@ -181,4 +162,5 @@ export default {
       }
     }
   }
-}</style>
+}
+</style>
